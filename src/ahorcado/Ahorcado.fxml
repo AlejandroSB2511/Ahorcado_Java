@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../AnchorPaneStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ahorcado.ControladorJuego">
+   <children>
+      <Label layoutX="390.0" layoutY="120.0" text="Vidas restantes" textFill="#0d27cd" />
+      <Label layoutX="165.0" layoutY="331.0" text="Palabra secreta" textFill="#0d27cd" />
+      <TextField fx:id="tf10" layoutX="478.0" layoutY="116.0" prefHeight="25.0" prefWidth="34.0" />
+      <Label layoutX="162.0" layoutY="360.0" text="Inserta una letra" textFill="#0d27cd" />
+      <TextField fx:id="input" layoutX="247.0" layoutY="356.0" prefHeight="25.0" prefWidth="25.0" />
+      <TextField fx:id="tf11" layoutX="247.0" layoutY="327.0" prefHeight="25.0" prefWidth="25.0" />
+      <Button fx:id="btnc" layoutX="279.0" layoutY="356.0" mnemonicParsing="false" onAction="#comprobarLetra" text="Comprobar letra" textFill="#0d27cd" />
+      <Button layoutX="512.0" layoutY="156.0" mnemonicParsing="false" text="Salir" textFill="#0d27cd" />
+      <TextArea fx:id="txtarea1" layoutX="390.0" layoutY="67.0" prefHeight="39.0" prefWidth="176.0" promptText="Pista" styleClass="text-area-custom" stylesheets="@../../TextAreaStyle.css" />
+      <Button fx:id="btnvolver" layoutX="390.0" layoutY="156.0" mnemonicParsing="false" onAction="#volverAJugar" text="Volver a empezar" textFill="#0d27cd" />
+      <AnchorPane fx:id="pane5" layoutX="154.0" layoutY="53.0" prefHeight="247.0" prefWidth="229.0" stylesheets="@../../AnchorPaneStyle.css">
+         <children>
+            <ImageView fx:id="img" fitHeight="235.0" fitWidth="186.0" layoutX="40.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="pane6" prefHeight="61.0" prefWidth="600.0" stylesheets="@../../AnchorPaneStyle.css">
+         <children>
+            <Label layoutX="176.0" layoutY="11.0" text="Juego Del Ahorcado" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

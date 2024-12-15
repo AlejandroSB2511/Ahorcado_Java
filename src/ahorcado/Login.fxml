@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane7" stylesheets="@../../AnchorPaneStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ahorcado.ControladorLogin">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="268.0" stylesheets="@style.css">
+         <children>
+            <Button fx:id="btnlogn" layoutX="38.0" layoutY="148.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Comprobar" textFill="#0e2bccdd" />
+            <Button fx:id="btnsalir" layoutX="193.0" layoutY="148.0" mnemonicParsing="false" onAction="#salirPrograma" text="Salir" textFill="#0d27cd" />
+            <PasswordField fx:id="tf2" layoutX="63.0" layoutY="115.0" prefHeight="25.0" prefWidth="130.0" promptText="Contraseña" />
+            <Label layoutX="97.0" layoutY="46.0" text="LOGIN" textFill="#0d27cd">
+               <font>
+                  <Font name="Verdana" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnreg" layoutX="121.0" layoutY="148.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="25.0" prefWidth="63.0" text="Registro" textFill="#0d27cd" />
+            <TextField fx:id="tf1" layoutX="63.0" layoutY="84.0" prefHeight="25.0" prefWidth="130.0" promptText="Usuario" />
+            <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="38.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/usuario.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="38.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/candado.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
